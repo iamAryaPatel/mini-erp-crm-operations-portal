@@ -1,0 +1,174 @@
+/* ============================================================
+   DESIGN TOKENS — Mini ERP + CRM
+   Professional SaaS Design System
+   Light Mode (default) + Dark Mode via [data-theme="dark"]
+   ============================================================ */
+
+:root {
+  /* ── Brand ── */
+  --color-primary: #2563eb;
+  --color-primary-hover: #1d4ed8;
+  --color-primary-light: rgba(37, 99, 235, 0.08);
+  --color-primary-muted: rgba(37, 99, 235, 0.15);
+  --color-primary-fg: #ffffff;
+
+  /* ── Semantic ── */
+  --color-success: #059669;
+  --color-success-light: rgba(5, 150, 105, 0.08);
+  --color-success-fg: #065f46;
+  --color-warning: #d97706;
+  --color-warning-light: rgba(217, 119, 6, 0.08);
+  --color-warning-fg: #92400e;
+  --color-danger: #dc2626;
+  --color-danger-light: rgba(220, 38, 38, 0.08);
+  --color-danger-fg: #991b1b;
+  --color-info: #4f46e5;
+  --color-info-light: rgba(79, 70, 229, 0.08);
+  --color-info-fg: #3730a3;
+
+  /* ── Surface & Layout ── */
+  --color-bg: #f8f9fb;
+  --color-bg-elevated: #ffffff;
+  --color-surface: #ffffff;
+  --color-surface-hover: #f1f5f9;
+  --color-surface-active: #e8edf3;
+  --color-overlay: rgba(0, 0, 0, 0.45);
+
+  /* ── Borders ── */
+  --color-border: #e2e8f0;
+  --color-border-light: #f1f5f9;
+  --color-border-focus: var(--color-primary);
+  --color-ring: rgba(37, 99, 235, 0.25);
+
+  /* ── Text ── */
+  --color-text: #0f172a;
+  --color-text-secondary: #475569;
+  --color-text-muted: #94a3b8;
+  --color-text-inverse: #ffffff;
+
+  /* ── Sidebar (always dark) ── */
+  --sidebar-bg: #0f172a;
+  --sidebar-bg-hover: rgba(255, 255, 255, 0.06);
+  --sidebar-bg-active: rgba(37, 99, 235, 0.15);
+  --sidebar-text: #94a3b8;
+  --sidebar-text-active: #ffffff;
+  --sidebar-accent: #3b82f6;
+  --sidebar-border: rgba(255, 255, 255, 0.06);
+  --sidebar-width: 260px;
+  --sidebar-width-collapsed: 72px;
+
+  /* ── Topbar ── */
+  --topbar-height: 60px;
+  --topbar-bg: rgba(255, 255, 255, 0.8);
+  --topbar-border: var(--color-border);
+
+  /* ── Typography ── */
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'SF Mono', 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+
+  --text-xs: 0.6875rem;    /* 11px */
+  --text-sm: 0.75rem;      /* 12px */
+  --text-base: 0.8125rem;  /* 13px */
+  --text-md: 0.875rem;     /* 14px */
+  --text-lg: 1rem;         /* 16px */
+  --text-xl: 1.125rem;     /* 18px */
+  --text-2xl: 1.375rem;    /* 22px */
+  --text-3xl: 1.75rem;     /* 28px */
+  --text-4xl: 2.25rem;     /* 36px */
+  --text-5xl: 3rem;        /* 48px */
+
+  --leading-tight: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+
+  /* ── Spacing ── */
+  --sp-0: 0;
+  --sp-1: 0.25rem;   /* 4px */
+  --sp-1h: 0.375rem; /* 6px */
+  --sp-2: 0.5rem;    /* 8px */
+  --sp-3: 0.75rem;   /* 12px */
+  --sp-4: 1rem;      /* 16px */
+  --sp-5: 1.25rem;   /* 20px */
+  --sp-6: 1.5rem;    /* 24px */
+  --sp-8: 2rem;      /* 32px */
+  --sp-10: 2.5rem;   /* 40px */
+  --sp-12: 3rem;     /* 48px */
+  --sp-16: 4rem;     /* 64px */
+  --sp-20: 5rem;     /* 80px */
+  --sp-24: 6rem;     /* 96px */
+
+  /* ── Borders ── */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 10px;
+  --radius-xl: 14px;
+  --radius-2xl: 18px;
+  --radius-full: 9999px;
+
+  /* ── Shadows ── */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 8px -1px rgba(0, 0, 0, 0.06), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 10px 20px -3px rgba(0, 0, 0, 0.08), 0 4px 8px -2px rgba(0, 0, 0, 0.04);
+  --shadow-xl: 0 20px 40px -5px rgba(0, 0, 0, 0.1), 0 8px 16px -4px rgba(0, 0, 0, 0.05);
+  --shadow-focus: 0 0 0 3px var(--color-ring);
+
+  /* ── Transitions ── */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 120ms;
+  --duration-base: 180ms;
+  --duration-slow: 280ms;
+
+  /* ── Z-indices ── */
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-overlay: 500;
+  --z-modal: 600;
+  --z-toast: 700;
+}
+
+/* ============================================================
+   DARK THEME
+   ============================================================ */
+[data-theme="dark"] {
+  --color-primary: #3b82f6;
+  --color-primary-hover: #60a5fa;
+  --color-primary-light: rgba(59, 130, 246, 0.12);
+  --color-primary-muted: rgba(59, 130, 246, 0.2);
+
+  --color-success-light: rgba(5, 150, 105, 0.15);
+  --color-success-fg: #6ee7b7;
+  --color-warning-light: rgba(217, 119, 6, 0.15);
+  --color-warning-fg: #fcd34d;
+  --color-danger-light: rgba(220, 38, 38, 0.15);
+  --color-danger-fg: #fca5a5;
+  --color-info-light: rgba(79, 70, 229, 0.15);
+  --color-info-fg: #a5b4fc;
+
+  --color-bg: #0b0f19;
+  --color-bg-elevated: #111827;
+  --color-surface: #1e293b;
+  --color-surface-hover: #273548;
+  --color-surface-active: #334155;
+  --color-overlay: rgba(0, 0, 0, 0.7);
+
+  --color-border: #1e293b;
+  --color-border-light: #1a2332;
+  --color-ring: rgba(59, 130, 246, 0.35);
+
+  --color-text: #f1f5f9;
+  --color-text-secondary: #94a3b8;
+  --color-text-muted: #64748b;
+
+  --sidebar-bg: #070b14;
+
+  --topbar-bg: rgba(17, 24, 39, 0.85);
+  --topbar-border: #1e293b;
+
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.2);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.15);
+  --shadow-md: 0 4px 8px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 10px 20px -3px rgba(0, 0, 0, 0.35), 0 4px 8px -2px rgba(0, 0, 0, 0.2);
+  --shadow-xl: 0 20px 40px -5px rgba(0, 0, 0, 0.4);
+}

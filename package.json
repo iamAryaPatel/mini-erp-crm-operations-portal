@@ -1,0 +1,17 @@
+{
+  "name": "mini-erp-crm",
+  "version": "1.0.0",
+  "description": "Mini ERP + CRM Operations Portal for wholesale/distribution",
+  "private": true,
+  "scripts": {
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "build:backend": "cd backend && npm run build",
+    "build:frontend": "cd frontend && npm run build",
+    "db:seed": "cd backend && npm run seed"
+  },
+  "keywords": ["erp", "crm", "express", "react", "postgresql"],
+  "author": "",
+  "license": "ISC"
+}
